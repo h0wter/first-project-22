@@ -14,8 +14,40 @@
   <body>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
     <include src="./partials/example.html"></include>
+    <section class="section-about">
+      <label for="">tradition and love</label>
+      <h2 class="">how it’s made?</h2>
+      <div>
+        <picture>
+          <source media="(min-width: 1200px)" srcset="./images/about/cow-desktop.png, 
+          ./images/about/cow-desktop@2x.png 2x" >
+          <source media="(min-width: 768px)" srcset="./images/about/cow-tablet.png, 
+          ./images/about/cow-tablet@2x.png 2x" >
+          <source media="(min-width: 320px)" srcset="./images/about/cow-mobile.png, 
+          ./images/about/cow-mobile@2x.png 2x" >
+          <img src="#" alt="cow"/>
+        </picture>
+    </div>
+        <div><p>Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+
+        </p>
+      </div>
+      <div>
+        <p>Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
+
+          Aliquam erat volutpat. Aenean accumsan.
+        </p>
+      </div>
+      <button type="button">Read more
+        <svg class="" width="4" height="8" >
+          <use href="./images/sprite.svg#icon-Vector"></use>
+        </svg>
+      </button>
+  </section>
+
 
     <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
     <script src="./index.js"></script>
   </body>
 </html>
+
