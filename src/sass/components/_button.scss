@@ -1,0 +1,28 @@
+.button {
+  min-height: 44px;
+  color: var(--secondaryBgc);
+  background-color: var(--accent);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31em;
+  border-radius: 22px;
+  @include flex(flex, center, center);
+}
+.button--light {
+  color: var(--accent);
+  background-color: var(--secondaryBgc);
+  &:hover,
+  &:focus {
+    background-color: var(--heroBtnLightHover);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+.button__icon {
+  margin-left: 12px;
+  width: 4px;
+  height: 8px;
+  fill: var(--secondaryBgc);
+}
+.button__icon--light {
+  fill: var(--accent);
+}

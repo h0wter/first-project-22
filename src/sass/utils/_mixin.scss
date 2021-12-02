@@ -1,0 +1,5 @@
+@mixin flex($df, $jc, $ai) {
+  display: $df;
+  justify-content: $jc;
+  align-items: $ai;
+}
