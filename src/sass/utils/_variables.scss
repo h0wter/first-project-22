@@ -1,0 +1,49 @@
+:root {
+//bgc кнопок, текст светлых кнопок, заголовки, ховер текста в навигации,большие цифры, ховер иконок соцсетей
+  --accent: #d41443;
+  
+//Фон героя и первой карточки Products
+  --heroBgc: #ffb8ca;
+
+//Фон секций - розовый
+  --primaryBgc: #fff5f6;
+//Фон секций - белый  
+  --secondaryBgc: #ffffff;
+//Фон мобильного меню  
+  --bgcMobMenu: #e17992;
+//Фон второй карточки Products, фон заголовков в контактах
+  --alternateBgc: #f0d1a5;
+//Фон третьей карточки Products, фон заголовков в контактах
+  --additionalBgc: #c2e297;
+// Фон под отзывом
+  --reviewBgc: #fafafa;
+//Круг за мороженым 
+  --circleBgc: #ffa5ba;
+// Фон активного слайдера
+  --accentSlider: #d31342;
+// Фон слайдера
+  --sliderBgc: #d9d9d9;
+
+//Основной текст 
+  --primaryColor: #907e82;
+//Белый текст
+  --secondaryColor: #ffffff;
+//Черный текст
+  --darkColor: #000000;
+//Иконки 
+  --iconColor: #fea5bb;
+//Заголовки
+  --titleColor: var(--accent);
+//Лейбл заголовков, время работы в контактах
+  --preTitleColor: #ffa5ba;
+
+//Светлая кнопка
+  --heroBtnLight: var(--secondaryBgc);
+//Главная кнопка
+  --heroBtnDark: var(--accent);
+
+//Ховер светлой кнопки
+  --heroBtnLightHover: #ecebeb;
+//Ховер главной кнопки, маркеры в отзывах
+  --heroBtnDarkHover: #c7133e;
+}
