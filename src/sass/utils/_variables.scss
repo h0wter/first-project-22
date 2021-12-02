@@ -1,44 +1,49 @@
-root: {
+:root {
 //bgc кнопок, текст светлых кнопок, заголовки, ховер текста в навигации,большие цифры, ховер иконок соцсетей
-  --accentColor: #d41443;
-//Фон героя и первой колонки Products
+  --accent: #d41443;
+  
+//Фон героя и первой карточки Products
   --heroBgc: #ffb8ca;
-//Светлая кнопка
-  --heroBtnLight: #ffffff;
-//Ховер светлой кнопки
-  --heroBtnLightHover: #ecebeb;
-//Главная кнопка
-  --heroBtnDark: #d41443;
-//Ховер главной кнопки, маркеры в отзывах
-  --heroBtnDarkHover: #c7133e;
-//Круг за мороженым 
-  --circleBgc: #ffa5ba;
+
 //Фон секций - розовый
   --primaryBgc: #fff5f6;
 //Фон секций - белый  
   --secondaryBgc: #ffffff;
 //Фон мобильного меню  
   --bgcMobMenu: #e17992;
-//Основной текст 
-  --primaryText: #907e82;
-//Белый текст
-  --secondaryText: #ffffff;
-//Черный текст
-  --darkText: #000000;
-//Иконки 
-  --iconColor: #fea5bb;
-//Заголовки
-  --titleColor: #d41443;
-//Лейбл заголовков, время работы в контактах
-  --preTitleColor: #ffa5ba;
-//Фон под второй колонкой Products, фон заголовков в контактах
+//Фон второй карточки Products, фон заголовков в контактах
   --alternateBgc: #f0d1a5;
-//Фон под третьей колонкой Products, фон заголовков в контактах
+//Фон третьей карточки Products, фон заголовков в контактах
   --additionalBgc: #c2e297;
 // Фон под отзывом
   --reviewBgc: #fafafa;
+//Круг за мороженым 
+  --circleBgc: #ffa5ba;
 // Фон активного слайдера
   --accentSlider: #d31342;
 // Фон слайдера
-  --bgcSlider: #d9d9d9;
+  --sliderBgc: #d9d9d9;
+
+//Основной текст 
+  --primaryColor: #907e82;
+//Белый текст
+  --secondaryColor: #ffffff;
+//Черный текст
+  --darkColor: #000000;
+//Иконки 
+  --iconColor: #fea5bb;
+//Заголовки
+  --titleColor: var(--accent);
+//Лейбл заголовков, время работы в контактах
+  --preTitleColor: #ffa5ba;
+
+//Светлая кнопка
+  --heroBtnLight: var(--secondaryBgc);
+//Главная кнопка
+  --heroBtnDark: var(--accent);
+
+//Ховер светлой кнопки
+  --heroBtnLightHover: #ecebeb;
+//Ховер главной кнопки, маркеры в отзывах
+  --heroBtnDarkHover: #c7133e;
 }
