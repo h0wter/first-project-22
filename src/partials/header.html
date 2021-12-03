@@ -1,41 +1,45 @@
 <header>
-    <a href="" class="logo">
-        <img srcset="images/logo.png 1x, images/logo@2x.png 2x" 
-        src="images/logo.png" alt="logo">
-    </a>
-    <nav class="menu">
-        <ul class="menu__list list">
-            <li class="menu__item">
-                <a class="menu__link current" href="">Home</a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" href="">About us</a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" href="">How it’s made?</a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" href="">Our products</a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" href="">Contact</a>
-            </li>
-        </ul>
-    </nav>
-    <button class="burger btn" type="button">
-        <svg 
-            class="burger-icon" 
-            width="20" 
-            height="12">
-            <!-- <use href="images/sprite.svg#icon-???"></use> -->
-        </svg>
-    </button>
-    <button class="btn" type="button">Buy now 
-        <svg 
-            class="greather-than" 
-            width="4" 
-            height="8">
-            <!-- <use href="images/sprite.svg#icon-???"></use> -->
-        </svg>
-    </button>
+    <div class="conteiner-header">
+        <a href="" class="logo">
+            <img srcset="images/logo.png 1x, images/logo@2x.png 2x" 
+            src="images/logo.png" alt="logo">
+        </a>
+        <nav class="menu">
+            <ul class="menu__list list">
+                <li class="menu__item">
+                    <a class="menu__link current" href="">Home</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="">About us</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="">How it’s made?</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="">Our products</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header-buttons">
+            <button class="burger btn" type="button">
+                <svg 
+                    class="burger-icon" 
+                    width="20" 
+                    height="12">
+                    <use href="images/sprite.svg#icon-burger"></use>
+                </svg>
+            </button>
+            <button class="btn btn-buy" type="button">Buy now 
+                <svg 
+                    class="greather-than"
+                    width="6"
+                    height="10">
+                    <use class="greather-than__icon" href="images/sprite.svg#icon-greather-than"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
 </header>
