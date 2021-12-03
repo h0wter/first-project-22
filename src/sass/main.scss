@@ -5,10 +5,22 @@
 
 //UTILS
 @import './utils/visually-hidden';
+@import './utils/variables';
+@import './utils/mixin';
 
 //BASE
 @import './base/common';
 
 //COMPONENTS
+@import './components/button';
 
 //LAYOUT
+@import './layout/header';
+@import './layout/hero';
+@import './layout/products';
+@import './layout/about';
+@import './layout/advantages';
+@import './layout/gallery';
+@import './layout/customer-reviews';
+@import './layout/contacts';
+@import './layout/footer';
