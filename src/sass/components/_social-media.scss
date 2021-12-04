@@ -11,14 +11,8 @@
 		}
 	}
 	@media screen and (min-width: 1080px) {
-		&:nth-child(odd) {
-			margin-right: 24px;
-		}
-		&:nth-child(even) {
+		&:not(:last-child) {
 			margin-right: 25px;
-		}
-		&:last-child {
-			margin-right: 0px;
 		}
 	}
 }
