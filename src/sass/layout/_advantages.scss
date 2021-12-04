@@ -1,0 +1,47 @@
+.advantages {
+    margin-bottom: 139px;
+}
+
+.advantages__list {
+    @include flex(flex, center, center);
+}
+
+.advantages__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.advantages__text--top {
+    font-family: Titan One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 58px;
+    line-height: 66px;
+    text-align: left;
+    letter-spacing: 0.04em;
+    color: #D41443;
+    margin-bottom: 15px;
+}
+
+.advantages__text {
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 176%;
+    /* or 28px */
+    letter-spacing: 0.02em;
+    color: #000000;
+
+}
+
+.advantages__text--top::before {
+    content: "++";
+    height: 50px;
+    background-color: blue;
+    background-image: url(../images/advantages/icon-1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-origin: border-box;
+    position: absolute;
+    margin-top: 11px;
+}
