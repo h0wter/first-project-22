@@ -1,23 +1,22 @@
 .btn-main {
-  min-height: 44px;
-  color: var(--secondaryBgc);
-  background-color: var(--accent);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.31em;
-  border-radius: 22px;
-  @include flex(flex, center, center);
+	min-height: 44px;
+	color: var(--secondaryBgc);
+	background-color: var(--accent);
+	border-radius: 22px;
+	@include font(700, 16px, 1.31em);
+
+	@include flex(flex, center, center);
 }
 .btn-main--light {
-  color: var(--accent);
-  background-color: var(--secondaryBgc);
-  &:hover,
-  &:focus {
-    background-color: var(--heroBtnLightHover);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
+	color: var(--accent);
+	background-color: var(--secondaryBgc);
+	&:hover,
+	&:focus {
+		background-color: var(--heroBtnLightHover);
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	}
 }
 .btn-main__icon {
-  width: 4px;
-  height: 8px;
+	width: 4px;
+	height: 8px;
 }
