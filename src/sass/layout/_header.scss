@@ -1,104 +1,69 @@
 header {
-  padding-top: 6px;
-  padding-bottom: 6px;
-  background-color: #ffb8ca;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	background-color: #ffb8ca;
 
-  @media screen and (min-width: 768px) {
-    padding-top: 37px;
-    padding-bottom: 37px;
-  }
+	@media screen and (min-width: 768px) {
+		padding-top: 37px;
+		padding-bottom: 37px;
+	}
 }
 
-.conteiner-header {
-  width: 100%;
-  margin: 0 auto;
-  padding-right: 15px;
-  padding-left: 15px;
-
-  @include flex(flex, space-between, center);
-
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 768px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
+.container-header {
+	@include flex(flex, space-between, center);
 }
 
 .menu {
-  @media screen and (max-width: 1199px) {
-    display: none;
-  }
+	@media screen and (max-width: 1079px) {
+		display: none;
+	}
 }
 
 .menu__list {
-  display: inline-flex;
+	display: inline-flex;
 }
 
 .menu__item {
-  &:not(:last-child) {
-    margin-right: 35px;
-  }
+	&:not(:last-child) {
+		margin-right: 35px;
+	}
 }
 
 .menu__link {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.3;
+	@include font(700, 16px, 1.31em);
 
-  color: var(--secondaryColor);
+	color: var(--secondaryColor);
 
-  &.current {
-    color: var(--accent);
-  }
+	&.current {
+		color: var(--accent);
+	}
 }
 
 .header-buttons {
-  display: inline-flex;
+	display: inline-flex;
 }
 
 .burger {
-  @media screen and (min-width: 768px) {
-    margin-right: 30px;
-  }
+	@media screen and (min-width: 768px) {
+		margin-right: 30px;
+	}
 
-  @media screen and (min-width: 1200px) {
-    display: none;
-  }
+	@media screen and (min-width: 1080px) {
+		display: none;
+	}
 }
 
 .btn-buy {
-  width: 159px;
-  min-height: 44px;
+	width: 159px;
 
-  color: var(--accent);
-  background-color: var(--secondaryBgc);
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.31em;
-
-  border-radius: 22px;
-
-  justify-content: center;
-  align-items: center;
-
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
-
-  &:hover,
-  &:focus {
-    background-color: var(--heroBtnLightHover);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  }
+	@media screen and (max-width: 767px) {
+		display: none;
+	}
 }
 
 .greather-than {
-  margin-left: 12px;
+	margin-left: 12px;
+
+	position: relative;
+	top: 1px;
 }
