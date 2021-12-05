@@ -1,10 +1,9 @@
 .section-about {
-    min-width: 480px;
     background-color: var(--primaryBgc);
     background-image: url(/images/about/milk-mobile.png);
     background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: 100vw;
+    background-position: bottom 61px center;
+    background-size: contain;
 
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -19,7 +18,8 @@
 
     @media screen and (min-width: 1080px) {
         background-image: url(/images/about/milk-desktop.png);
-        // max-width: 1080px;
+        background-size: 1280px;
+        background-position: bottom;
         
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -31,73 +31,15 @@
 
 .about-container {
     padding-top: 125px;
-    // padding-left: 50px;
-    // padding-right: 50px;
-    padding-bottom: 71px;
-    // margin-left: auto;
-    // margin-right: auto;
-    // width: 320px;
-
-    // @media screen and (max-width: 767px) {
-    //     width: 480px;
-    //     padding-left: 50px;
-    //     padding-right: 50px;
-        
-    // }
-
-    // @media screen and (min-width: 768px) {
-    //     width: 768px;
-        
-    // }
-
-    // @media screen and (min-width: 1080px) {
-    //    width: 1080px;
-        
-    // }
 }
 
 .about-label {
-    // font-family: Titan One;
-    // font-style: normal;
-    // font-weight: normal;
-    // font-size: 18px;
-    // line-height: 21px;
     text-align: center;
-    // text-transform: uppercase;
-    // color: var(--circleBgc);
-
-    // @media screen and (min-width: 768px) {
-    //     font-size: 26px;
-    //     line-height: 30px;
-    // }
-
-    // @media screen and (min-width: 1080px) {
-    //     font-size: 30px;
-    //     line-height: 34px;
-    // }
 }
 
 .about-title {
     margin-top: 15px;
-    // font-family: Titan One;
-    // font-style: normal;
-    // font-weight: normal;
-    // font-size: 34px;
-    // line-height: 39px;
     text-align: center;
-    // letter-spacing: 0.04em;
-    // text-transform: uppercase;
-    // color: var(--accent);
-
-    // @media screen and (min-width: 768px) {
-    //     font-size: 48px;
-    //     line-height: 55px;
-    // }
-
-    // @media screen and (min-width: 1080px) {
-    //     font-size: 58px;
-    //     line-height: 66px;
-    // }
 }
 
 
@@ -114,17 +56,11 @@
 }
 
 .about-text-block {
-    // max-width: 220px;
-    // margin-left: auto;
-    // margin-right: auto;
+    padding-left: 35px;
+    padding-right: 35px;
 
-    @media screen and (min-width: 768px) {
-        // max-width: 340px;
-
-    }
 
     @media screen and (min-width: 1080px) {
-        // max-width: 463px;
         margin-left: 0;
         margin-right: 0;
 
@@ -133,25 +69,37 @@
 
 }
 
-.about-first-text {
-    margin-top: 46px;
-    margin-bottom: 30px;
+
+
+.about-first-text, .about-second-text {
     font-family: DM Sans;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
     line-height: 19px;
-    color: var(--darkColor);
-    // max-width: 320px;
 
     @media screen and (min-width: 768px) {
         max-width: 463px;
         font-size: 14px;
-        line-height: 25px;
     }
 
     @media screen and (min-width: 1080px) {
         max-width: 463px;
+    }
+}
+
+
+.about-first-text {
+    margin-top: 46px;
+    margin-bottom: 30px;
+    color: var(--darkColor);
+
+    @media screen and (min-width: 768px) {
+        max-width: 463px;
+        
+    }
+
+    @media screen and (min-width: 1080px) {
         font-size: 16px;
         line-height: 28px;
     }
@@ -159,22 +107,14 @@
 
 .about-second-text {
     margin-bottom: 20px;
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 19px;
     color: var(--primaryColor);
-    // max-width: 320px;
 
     @media screen and (min-width: 768px) {
         max-width: 340px;
-        font-size: 14px;
-        line-height: 25px;
+    
     }
 
     @media screen and (min-width: 1080px) {
-        max-width: 463px;
         font-size: 14px;
         line-height: 27px;
     }
@@ -183,26 +123,7 @@
 
 .about-btn {
     width: 176px;
-//     height: 44px;
     border: none;
-//     font-family: DM Sans;
-//     font-style: normal;
-//     font-weight: bold;
-//     font-size: 14px;
-//     line-height: 18px;
-//     align-items: center;
-//     justify-content: center;
-//     color: var(--accent);
-//     background: #FFFFFF;
-//     border-radius: 22px;
-//     transition-property: background-color;
-//     transition-duration: 250ms;
-//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-//     &:hover,
-//     &:focus {
-//         background-color: var(--heroBtnLightHover);
-//     }
 
     @media screen and (min-width: 768px) {
         margin-top: 62px;
@@ -219,10 +140,6 @@
     
 }
 
-// .about-picture {
-//     display: block;
-//     width: 100%;
-// }
 
 .about-img-box {
     
