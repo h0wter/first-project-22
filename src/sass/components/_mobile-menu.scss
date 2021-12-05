@@ -1,0 +1,45 @@
+.mob-menu {
+	position: fixed;
+	background-color: var(--mobMenuBgc);
+	z-index: 100;
+	width: 100vw;
+	height: 100vh;
+	@media screen and(min-width:1080px) {
+		display: none;
+	}
+}
+.is-hidden {
+	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
+}
+.mob-menu.is-open {
+	visibility: visible;
+	opacity: 1;
+	pointer-events: all;
+}
+.mob-menu__button {
+	margin-left: auto;
+	margin-bottom: 23px;
+	@include flex(flex, center, center);
+}
+.mob-menu__icon {
+	width: 14px;
+	height: 14px;
+}
+.mob-menu__btn-main {
+	width: 186px;
+	margin: auto;
+}
+.mob-menu__btn-icon {
+	margin-left: 14px;
+}
+.mob-menu__item {
+	padding: 34px;
+	color: var(--secondaryColor);
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 18px;
+
+	border-bottom: 1px solid rgba(167, 122, 133, 0.75);
+}
