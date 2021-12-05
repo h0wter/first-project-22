@@ -1,5 +1,10 @@
 @mixin flex($df, $jc, $ai) {
-  display: $df;
-  justify-content: $jc;
-  align-items: $ai;
+	display: $df;
+	justify-content: $jc;
+	align-items: $ai;
+}
+@mixin font($fw, $fs, $lh) {
+	font-weight: $fw;
+	font-size: $fs;
+	line-height: $lh;
 }
