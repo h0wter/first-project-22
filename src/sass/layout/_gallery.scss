@@ -1,0 +1,20 @@
+.gallery {
+    height: 122px;
+    background-image: linear-gradient(#FFF5F6 40%, #FFFFFF 40% 100%);
+
+    @media screen and (max-width: 319px) {
+		display: none;
+	}
+
+    @media screen and (min-width: 768px) {
+		height: 264px;
+	}
+
+    @media screen and (min-width: 1080px) {
+		height: 430px;
+	}
+}
+
+.gallery__picture {
+    margin: 0 auto;
+}
