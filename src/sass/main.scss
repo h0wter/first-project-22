@@ -12,7 +12,11 @@
 @import './base/common';
 
 //COMPONENTS
+@import './components/container';
 @import './components/button';
+@import './components/social-media';
+@import './components/second-title';
+@import './components/third-title';
 
 //LAYOUT
 @import './layout/header';
