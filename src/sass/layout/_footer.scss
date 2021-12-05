@@ -1,11 +1,12 @@
 .footer {
 	background-color: var(--primaryBgc);
-	border-bottom: 1px solid #e1e1e1;
+}
+.footer__position {
 	padding-bottom: 43px;
 
 	@media screen and(min-width:768px) {
 		padding-bottom: 91px;
-		@include flex(flex, space-between, none);
+		@include flex(flex, space-between, flex-start);
 	}
 
 	@media screen and(min-width:1080px) {
@@ -13,6 +14,7 @@
 		align-items: center;
 	}
 }
+
 .footer__titles {
 	max-width: 223px;
 	@media screen and(min-width:768px) {
@@ -29,6 +31,7 @@
 	margin-bottom: 17px;
 
 	@media screen and(min-width:768px) {
+		letter-spacing: 0.04em;
 		margin-bottom: 16px;
 	}
 
@@ -36,28 +39,17 @@
 		margin-bottom: 15px;
 	}
 }
-.footer__elements {
-	@media screen and(max-width:767px) {
-		max-width: 230px;
-		margin-left: auto;
-	}
-}
 .footer__social-list {
-	max-width: 153px;
+	width: 100%;
+	justify-content: flex-end;
 	margin-bottom: 46px;
-	margin-left: auto;
-
-	@media screen and(min-width:768px) {
-		max-width: 162px;
-	}
-	@media screen and(min-width:1080px) {
-		margin-bottom: 50px;
-		max-width: 151px;
-	}
 }
 
 .footer__text-contact {
-	@include font(700, 12px, 186%);
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	@include font(700, 12px, 1.86em);
 
 	@media screen and(min-width:768px) {
 		font-size: 14px;
@@ -72,11 +64,11 @@
 	&:hover,
 	&:focus {
 		box-shadow: 0px 1px 4px rgba(212, 20, 68, 0.75);
+		transition: box-shadow 250ms linear;
 	}
 }
 .footer__copyright {
-	background-color: var(--primaryBgc);
-
+	border-top: 1px solid #e1e1e1;
 	padding-top: 21px;
 	padding-bottom: 25px;
 
@@ -86,18 +78,22 @@
 	}
 
 	@media screen and(min-width:1080px) {
-		background-color: var(--secondaryBgc);
+		padding-top: 9px;
+		padding-bottom: 10px;
 	}
 }
 .footer__copyright-text {
-	max-width: 145px;
-	margin: auto;
+	text-align: center;
 	color: var(--primaryColor);
-	@include font(700, 14px, 152%);
+	@include font(700, 14px, 1.52em);
+
+	@media screen and(max-width:767px) {
+		margin: auto;
+		max-width: 150px;
+	}
 
 	@media screen and(min-width:768px) {
-		line-height: 186%;
+		line-height: 1.86em;
 		letter-spacing: 0.02em;
-		max-width: 276px;
 	}
 }
