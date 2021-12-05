@@ -1,9 +1,13 @@
 .mob-menu {
 	position: fixed;
-	background-color: var(--mobMenuBgc);
+	top: 0;
+	left: 0;
+	background-color: var(--bgcMobMenu);
 	z-index: 100;
 	width: 100vw;
 	height: 100vh;
+	overflow-x: scroll;
+
 	@media screen and(min-width:1080px) {
 		display: none;
 	}
@@ -19,27 +23,59 @@
 	pointer-events: all;
 }
 .mob-menu__button {
-	margin-left: auto;
-	margin-bottom: 23px;
+	margin: 23px 28px 23px auto;
+
 	@include flex(flex, center, center);
+
+	@media screen and(min-width:768px) {
+		margin-right: 34px;
+	}
+
+	&:hover,
+	&:focus {
+		background-color: var(--heroBtnLightHover);
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	}
 }
 .mob-menu__icon {
 	width: 14px;
 	height: 14px;
 }
 .mob-menu__btn-main {
+	width: 209px;
 	width: 186px;
 	margin: auto;
+	margin-bottom: 19px;
+
+	@media screen and(min-width:768px) {
+		width: 186px;
+	}
 }
 .mob-menu__btn-icon {
-	margin-left: 14px;
-}
-.mob-menu__item {
-	padding: 34px;
-	color: var(--secondaryColor);
-	font-weight: bold;
-	font-size: 14px;
-	line-height: 18px;
+	margin-left: 16px;
 
-	border-bottom: 1px solid rgba(167, 122, 133, 0.75);
+	@media screen and(min-width:768px) {
+		margin-left: 14px;
+	}
+}
+
+.mob-menu__item {
+	padding-top: 13px;
+	padding-bottom: 11px;
+	padding-left: 21px;
+
+	@include font(700, 14px, 1.29em);
+
+	border-bottom: 1px solid var(--lineMobMenu);
+
+	@media screen and(min-width:768px) {
+		padding-left: 24px;
+	}
+}
+.mob-menu__link {
+	color: var(--secondaryColor);
+
+	&.current {
+		color: var(--accent);
+	}
 }
