@@ -59,7 +59,7 @@
 		max-width: 926px;
 		height: 138px;
 
-		padding-top: 75.5px;
+		padding-top: 74px;
 		padding-bottom: 32px;
 		padding-left: 59px;
 		padding-right: 54px;
@@ -157,7 +157,8 @@
 
 .slick-dots li button::before {
 	font-size: 12px;
-	color: var(--sliderBgc);
+	// color: var(--sliderBgc);
+	color: #e1e1e1;
 }
 
 .slick-dots li.slick-active button::before {
