@@ -18,7 +18,7 @@
 
     @media screen and (min-width: 1080px) {
         background-image: url(/images/about/milk-desktop.png);
-        background-size: 1280px;
+        background-size: 1280px 534px;
         background-position: bottom;
         
         @media (min-device-pixel-ratio: 2),
@@ -30,7 +30,18 @@
 }
 
 .about-container {
-    padding-top: 125px;
+    padding-top: 127px;
+    padding-bottom: 39px;
+
+    @media screen and (min-width: 768px) {
+        padding-top: 143px;
+        padding-bottom: 66px;
+    }
+
+    @media screen and (min-width: 1080px) {
+        padding-top: 125px;
+        padding-bottom: 71px;
+    }
 }
 
 .about-label {
@@ -59,8 +70,14 @@
     padding-left: 35px;
     padding-right: 35px;
 
+    @media screen and (min-width: 768px) {
+        padding-left: 0px;
+        padding-right: 50px;
+    }
+
 
     @media screen and (min-width: 1080px) {
+        padding-right: 35px;
         margin-left: 0;
         margin-right: 0;
 
@@ -95,11 +112,12 @@
     color: var(--darkColor);
 
     @media screen and (min-width: 768px) {
-        max-width: 463px;
+        max-width: 340px;
         
     }
 
     @media screen and (min-width: 1080px) {
+        max-width: 463px;
         font-size: 16px;
         line-height: 28px;
     }
@@ -115,6 +133,7 @@
     }
 
     @media screen and (min-width: 1080px) {
+        max-width: 463px;
         font-size: 14px;
         line-height: 27px;
     }
@@ -155,4 +174,12 @@
 .about-image {
     margin-left: auto;
     margin-right: auto;
+
+    @media screen and (min-width: 768px) {
+        min-width: 340px;
+    }
+
+    @media screen and (min-width: 1080px) {
+        min-width: 516px;
+    }
 }
