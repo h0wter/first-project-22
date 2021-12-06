@@ -8,7 +8,13 @@
 		background-image:  url(/images/contacts/bg-desktop.png), linear-gradient(#ffffff 15%, #fff5f6 15%);
 		background-repeat: no-repeat;
 		background-position: center;
-		// background-size: cover;
+		@media screen and (min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx) {
+		background-image: url("/images/contacts/bg-desktop@2x.png");
+	  }
+	
+
 	}
 }
 
@@ -26,11 +32,6 @@
 	}
 }
 
-.contacts__image {
-	@media screen and (min-width: 1080px) {
-		background-image: url(/images/contacts/bg-desktop.png);
-	}
-}
 
 .contacts__list {
 	padding-left: 35px;
