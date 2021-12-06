@@ -1,7 +1,7 @@
 .products__container {
-  background-color: var(--secondaryBgc);
   padding-top: 121px;
   padding-bottom: 98px;
+  background-color: var(--secondaryBgc);
 
   @media screen and (min-width: 768px) {
     padding-top: 122px;
@@ -13,53 +13,6 @@
   }
 }
 
-.product__pretitle {
-  margin-bottom: 15px;
-  font-family: Titan One;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
-  line-height: 1.16;
-
-  text-align: center;
-  text-transform: uppercase;
-
-  color: #FFA5BA;
-
-  @media screen and (min-width: 768px) {
-    font-size: 26px;
-    line-height: 1.15;
-  }
-
-  @media screen and (max-width:1080px) {
-    font-size: 30px;
-    line-height: 1.13;
-  }
-}
-
-.products__title {
-  margin-bottom: 144px;
-  font-family: Titan One;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 34px;
-  line-height: 1.14;
-  text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-
-  color: var(--accent);
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 150px;
-    font-size: 48px;
-  }
-
-  @media screen and (min-width: 1080px) {
-    margin-bottom: 259px;
-    font-size: 58px;
-  }
-}
 
 .products__list {
   @media screen and (min-width:768px) {
@@ -75,20 +28,18 @@
 
 .products__item {
   position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+  padding-top: 161px;
+  padding-bottom: 40px;
   text-align: center;
   border-radius: 24px;
-  padding-top: 161px;
-  padding-bottom: 40px;    
+  
 
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
       margin-bottom: 130px;
     }
-  }
-
-  @media screen and (min-width: 480px) and (max-width: 767px){
-    margin: 0 auto;
-    width: 280px;
   }
 
   @media screen and (min-width: 768px) {
@@ -226,7 +177,6 @@
 
 .item__heading {
   position: relative;
-  // padding-top: 161px;
   padding-bottom: 30px;
   margin-bottom: 30px;
   font-family: Titan One;
@@ -267,9 +217,9 @@
   margin-right: auto;
   margin-bottom: 30px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
-  line-height: 1,51;
+  line-height: 1.51;
   /* or 21px */
 
   text-align: center;
@@ -288,11 +238,14 @@
   }
 }
 
+// ======== Кнопка ======== //
+
 .products__btn {
   position: relative;
   width: 40px;
   height: 40px;
   background-color: var(--secondaryBgc);
+  border: 1px solid transparent; 
   border-radius: 50px;
   margin-left: auto;
   margin-right: auto;
@@ -300,23 +253,69 @@
 
   &:hover,
   &focus {
+    border: 2px solid var(--accent);
     transform: rotateZ(-90deg);
   }
+}
 
-  &::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 40px;
-    height: 40px;
-    border-radius: 50px;
-    background-image: url(../images/hero/arrow-right-desktop.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(../images/hero/arrow-right-desktop@2x.jpg);
-    }
+.btn__icon {
+  width: 40px;
+  border-radius: 50px;
+}
+
+// ======== Описание на карточках ======== //
+
+.products__text {
+  position: absolute;
+  top: -40px;
+  left: -8px;
+  transform: translate(-50%, -50%);
+  width: 240px;
+  padding: 5px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.51;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    padding: 5px 15px;
+    width: 196px;
+    top: -72px;
+    left: 30px;
+    // font-size: 16px;
   }
+
+  @media screen and (min-width: 1080px) {
+    width: 315px;
+    top: -78px;
+    left: -20px;
+    font-size: 20px;
+  }
+}
+
+.products__btn:hover .products__text,
+.products__btn:focus .products__text {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0%);
+  transform: rotateZ(90deg);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.products__text--icecream {
+  background-color: var(--heroBgc);
+}
+
+.products__text--icecoffee {
+  background-color: var(--alternateBgc);
+}
+
+.products__text--milkshaces {
+  background-color: var(--additionalBgc);
 }
