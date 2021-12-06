@@ -1,29 +1,39 @@
 <section class="hero">
     <div class="container">
-        <h1>ice cream made with passion</h1>
-        <button 
-            class="btn " 
-            type="button">
-            Products
-        </button>
-        <button 
-            class="btn " 
-            type="button">
-            How it’s made?
-        </button>
-        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</h2>
-        <button class="btn" type="button"> &#x02192</button>
-        <div 
-            class="network">
-            <p>16</p>
-            <p>cafes</p>
+        <div class="hero-block">
+            <div class="hero-left">
+                <h1 
+                    class="hero__tittle" >
+                    ice cream made with 
+                    <span class="hero__tittle--text" >passion</span> 
+                </h1>
+                <ul class="hero__list">
+                    <li class="hero__item">
+                        <button 
+                            class="btn btn-hero" 
+                            type="button">
+                            Products
+                        </button>
+                    </li>
+                    <li class="hero__item">
+                        <button 
+                            class="btn btn-hero btn-hero--light" 
+                            type="button">
+                            How it’s made?
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            <div class="hero-right">
+                <p class="text-info-number">16</p>
+                <p class="text-info">cafes</p>
+                <p class="text-info-number">23</p>
+                <p class="text-info">food trucks</p>
+            </div>
         </div>
-        <div 
-            class="network">
-            <p>26</p>
-            <p>food trucks</p>
-        </div>
-        <picture>
+        <h2 class="hero__caption">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</h2>
+        <button class="btn hero__caption--btn" type="button"></button>
+        <picture class="hero-img__girl">
             <source 
                 media="(min-width: 1080px)" 
                 srcset="" 
@@ -45,7 +55,7 @@
                 src="#" 
                 alt="girl with ice cream">
         </picture>
-        <picture>
+        <picture class="hero-img__milk">
             <source 
                 media="(min-width: 1080px)" 
                 srcset="" 
@@ -67,7 +77,7 @@
                 src="#" 
                 alt="milk in a cup">
         </picture>
-        <picture>
+        <picture class="hero-img__icecream">
             <source 
                 media="(min-width: 1080px)" 
                 srcset="" 

@@ -28,6 +28,7 @@
 	fill: var(--circleBgc);
 	max-width: 32px;
 	max-height: 32px;
+	transition: fill var(--cubic);
 
 	@media screen and(min-width:768px) {
 		max-width: 34px;

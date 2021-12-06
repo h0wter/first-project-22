@@ -50,8 +50,8 @@
 	@media screen and (min-width: 768px) {
 		max-width: 620px;
 		height: 164px;
-		padding-top: 47px;
-		padding-bottom: 34px;
+		padding-top: 76px;
+		padding-bottom: 20px;
 		padding-left: 60px;
 		padding-right: 36px;
 	}
@@ -59,7 +59,7 @@
 		max-width: 926px;
 		height: 138px;
 
-		padding-top: 32px;
+		padding-top: 74px;
 		padding-bottom: 32px;
 		padding-left: 59px;
 		padding-right: 54px;
@@ -77,8 +77,6 @@
 	position: absolute;
 	left: 61px;
 	top: 28px;
-
-	z-index: 10;
 
 	@media screen and (min-width: 768px) {
 		left: 40px;
@@ -98,12 +96,6 @@
 	padding: 0;
 	margin: 0;
 	background: repeating-linear-gradient(#e1e1e1, #e1e1e1 1px, #fafafa 1px, #fafafa 31px);
-	@media screen and (min-width: 768px) {
-		padding-top: 17px;
-		padding-bottom: 6px;
-		padding-left: 20px;
-		padding-right: 44px;
-	}
 }
 
 .customer__text {
@@ -120,11 +112,8 @@
 	letter-spacing: 0.04em;
 
 	color: #000000;
-	z-index: 1000;
 
 	@media screen and (min-width: 768px) {
-		bottom: 0;
-
 		width: 460px;
 
 		font-size: 14px;
@@ -139,7 +128,9 @@
 	}
 }
 
-.three-dots {
+.customer__name::before {
+	content: '.   .   .';
+	display: block;
 	color: var(--heroBtnDarkHover);
 	font-size: 32px;
 	padding: 0;
@@ -166,7 +157,8 @@
 
 .slick-dots li button::before {
 	font-size: 12px;
-	color: var(--sliderBgc);
+	// color: var(--sliderBgc);
+	color: #e1e1e1;
 }
 
 .slick-dots li.slick-active button::before {
