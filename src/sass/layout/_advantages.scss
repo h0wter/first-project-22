@@ -29,14 +29,32 @@
 
     &:first-child::before {
         background-image: url(../images/advantages/icon-1.png);
+        
+        @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/advantages/icon-1@2x.png);        
+        }
     }
 
     &:nth-child(2)::before {
         background-image: url(../images/advantages/icon-2.png);
+
+        @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/advantages/icon-2@2x.png);        
+        }
     }
 
     &:nth-child(3)::before {
         background-image: url(../images/advantages/icon-3.png);
+
+        @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(../images/advantages/icon-3@2x.png);        
+        }
     }
 }
 
