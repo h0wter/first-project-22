@@ -87,7 +87,7 @@
 	color: var(--primaryColor);
 	@include font(700, 14px, 1.52em);
 
-	@media screen and(max-width:479px) {
+	@media screen and(max-width:767px) {
 		margin: auto;
 		max-width: 149px;
 	}
