@@ -1,14 +1,15 @@
-.contacts_bgr{
-    height: 100%;
-    background-image: linear-gradient(#FFFFFF 5%, #FFF5F6 5%);
+.contacts_bgr {
+	height: 100%;
+	background-image: linear-gradient(#ffffff 5%, #fff5f6 5%);
 	@media screen and (min-width: 768px) {
-		background-image: linear-gradient(#FFFFFF 9%, #FFF5F6 9%);
+		background-image: linear-gradient(#ffffff 9%, #fff5f6 9%);
 	}
 	@media screen and (min-width: 1080px) {
-		background-image: linear-gradient(#FFFFFF 15%, #FFF5F6 15%);
+		background-image:  url(/images/contacts/bg-desktop.png), linear-gradient(#ffffff 15%, #fff5f6 15%);
+		background-repeat: no-repeat;
+		background-position: center;
+		// background-size: cover;
 	}
-
-
 }
 
 .contacts {
@@ -44,7 +45,7 @@
 }
 
 .contacts__item {
-	background-color:var(--secondaryColor);
+	background-color: var(--secondaryColor);
 	padding: 43px 20px;
 	box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 	border-radius: 24px;
@@ -218,8 +219,10 @@
 	margin-left: auto;
 	margin-right: auto;
 	border: none;
-	padding-left: 17px;
+	fill: white;
 	@media screen and (min-width: 768px) {
+		width: 192px;
+
 		margin-right: 15px;
 		margin-left: 0;
 		margin-bottom: 0px;
@@ -235,8 +238,14 @@
 	padding-left: 17px;
 
 	@media screen and (min-width: 768px) {
+		width: 192px;
+
 		margin-left: 0;
 		margin-right: 0;
 	}
 }
 
+.arrow-svg {
+	width: 6px;
+	height: 10px;
+}
