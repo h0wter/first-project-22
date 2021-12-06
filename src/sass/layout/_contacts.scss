@@ -1,5 +1,18 @@
+.contacts_bgr{
+    height: 100%;
+    background-image: linear-gradient(#FFFFFF 5%, #FFF5F6 5%);
+	@media screen and (min-width: 768px) {
+		background-image: linear-gradient(#FFFFFF 9%, #FFF5F6 9%);
+	}
+	@media screen and (min-width: 1080px) {
+		background-image: linear-gradient(#FFFFFF 15%, #FFF5F6 15%);
+	}
+
+
+}
+
 .contacts {
-	background-color: var(--primaryBgc);
+	// background-color: var(--primaryBgc);
 	font-size: 12px;
 	padding-bottom: 113px;
 	@media screen and (min-width: 768px) {
@@ -31,6 +44,7 @@
 }
 
 .contacts__item {
+	background-color:var(--secondaryColor);
 	padding: 43px 20px;
 	box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
 	border-radius: 24px;
@@ -219,8 +233,10 @@
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: 17px;
+
 	@media screen and (min-width: 768px) {
 		margin-left: 0;
 		margin-right: 0;
 	}
 }
+
