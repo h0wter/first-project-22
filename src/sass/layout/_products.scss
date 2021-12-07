@@ -19,7 +19,7 @@
 }
 
 .second-title{
-  margin-bottom: 144px;
+  margin-bottom: 259px;
   text-align: center;
 }
 
@@ -60,7 +60,7 @@
 
   @media screen and (min-width: 768px) {
     margin: 15px;
-    flex-basis: calc((100% - 3 * 60px) / 3);
+    flex-basis: calc((100% - 3 * 30px) / 3);
     padding-left: 11px;
     padding-right: 11px;
     padding-bottom: 40px;
@@ -250,7 +250,7 @@
 // ======== Кнопка ======== //
 
 .products__btn {
-  position: relative;
+  // position: relative;
   width: 40px;
   height: 40px;
   background-color: var(--secondaryBgc);
@@ -258,12 +258,11 @@
   border-radius: 50px;
   margin-left: auto;
   margin-right: auto;
-  transition: transform 250ms cubic-bezier(0.6, 0.04, 0.98, 0.335);
+  transition: border 250ms cubic-bezier(0.6, 0.04, 0.98, 0.335);
 
   &:hover,
   &focus {
     border: 2px solid var(--accent);
-    transform: rotateZ(-90deg);
   }
 }
 
@@ -276,8 +275,8 @@
 
 .products__text {
   position: absolute;
-  top: -40px;
-  left: -8px;
+  top: 65%;
+  left: 50%;
   transform: translate(-50%, -50%);
   width: 240px;
   padding: 5px;
@@ -287,22 +286,20 @@
   text-align: center;
   opacity: 0;
   visibility: hidden;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #ffffff;
 
   @media screen and (min-width: 768px) {
-    padding: 5px 15px;
-    width: 196px;
-    top: -72px;
-    left: 30px;
-    // font-size: 16px;
+    top: 63%;
+    padding: 0 15px;
+    width: 220px;
+    font-size: 16px;
   }
 
   @media screen and (min-width: 1080px) {
     width: 315px;
-    top: -78px;
-    left: -20px;
+    top: 65%;
+    left: 50%;
     font-size: 20px;
   }
 }
@@ -311,11 +308,6 @@
 .products__btn:focus .products__text {
   opacity: 1;
   visibility: visible;
-  transform: translateY(0%);
-  transform: rotateZ(90deg);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .products__text--icecream {
   background-color: var(--heroBgc);
