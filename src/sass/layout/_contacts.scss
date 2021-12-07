@@ -78,7 +78,7 @@
 	padding-right: 25px;
 	border-radius: 4px;
 	background: var(--alternateBgc);
-	font-weight: 500;
+	
 	line-height: 1.86;
 	text-align: center;
 	letter-spacing: 0.04em;
@@ -88,8 +88,8 @@
 	@media screen and (min-width: 768px) {
 		font-size: 16px;
 		height: 28px;
-		padding-left: 17px;
-		padding-right: 17px;
+		padding-left: 15px;
+		padding-right: 15px;
 	}
 }
 
@@ -109,23 +109,19 @@
 }
 
 .contacts__city {
-	font-weight: 500;
 	line-height: 1.86;
 	letter-spacing: 0.04em;
 	color: var(--darkColor);
 	margin-bottom: 10px;
 	@media screen and (min-width: 768px) {
-		padding: 30px 0px;
 		margin-bottom: 14px;
 	}
 	@media screen and (min-width: 768px) {
-		padding: 30px 0px;
 		margin-bottom: 10px;
 	}
 }
 
 .contacts__story {
-	font-weight: 500;
 	line-height: 1.5;
 	color: var(--primaryColor);
 
@@ -168,36 +164,40 @@
 }
 
 .contacts__days {
-	font-weight: 500;
 	line-height: 1.86;
+	letter-spacing: 0.04em;
 	color: var(--darkColor);
 }
 
 .contacts__days-time {
-	font-weight: 500;
 	line-height: 1.86;
 	color: var(--preTitleColor);
 }
 
-.cotacts__connection {
+.contacts__connection {
 	padding-top: 25px;
 	min-width: 100%;
 	line-height: 1.5;
 
 	@media screen and (min-width: 768px) {
+		padding-top: 30px;
+		line-height: 1.83;
+	}
+
+	@media screen and (min-width: 1080px) {
+		padding-top: 32px;
 		line-height: 1.83;
 	}
 }
 .contacts__phone {
 	display: block;
-	font-weight: 500;
-	// line-height: 18px;
+	line-height: 1.83;
 	color: var(--primaryColor);
 }
 .contacts__mail {
 	display: block;
-	font-weight: 500;
-	// line-height: 18px;
+	
+	line-height: 1.83;
 	color: var(--primaryColor);
 }
 
