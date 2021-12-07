@@ -5,13 +5,14 @@
 		background-image: linear-gradient(#ffffff 9%, #fff5f6 9%);
 	}
 	@media screen and (min-width: 1080px) {
-		background-image:  url(/images/contacts/bg-desktop.png), linear-gradient(#ffffff 15%, #fff5f6 15%);
+		background-image:  url(/images/contacts/bg-desktop.png), linear-gradient(#ffffff 11.74%, #fff5f6 11.74%);
 		background-repeat: no-repeat;
 		background-position: center;
 		@media screen and (min-device-pixel-ratio: 2),
 		(min-resolution: 192dpi),
 		(min-resolution: 2dppx) {
-		background-image: url(/images/contacts/bg-desktop@2x.png);
+		background-image: url(/images/contacts/bg-desktop@2x.png), linear-gradient(#ffffff 11.74%, #fff5f6 11.74%);
+		background-size: 1920px;
 	}
 	
 
