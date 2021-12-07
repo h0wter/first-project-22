@@ -175,8 +175,8 @@
 
 	&::after {
 		content: '';
-		width: 3px;
-		height: 3px;
+		width: 0px;
+		height: 0px;
 		display: block;
 		position: absolute;
 		background-color: var(--secondaryBgc);
@@ -287,7 +287,7 @@
 .hero-img__girl {
 	position: absolute;
 	right: 15px;
-	bottom: -31px;
+	bottom: -32px;
 	z-index: 2;
 
 	@media screen and (max-width: 767px) {
@@ -295,7 +295,7 @@
 	}
 
 	@media screen and (min-width: 1080px) {
-		bottom: -37px;
+		bottom: -38px;
 	}
 }
 
@@ -311,7 +311,7 @@
 
 .hero-img__milk {
 	position: absolute;
-	bottom: -3px;
+	bottom: -4px;
 	left: 15px;
 	z-index: 1;
 
@@ -320,7 +320,7 @@
 	}
 
 	@media screen and (min-width: 1080px) {
-		bottom: 8px;
+		bottom: 7px;
 	}
 }
 
@@ -405,7 +405,7 @@
 	100% {
 		width: 538px;
 		height: 538px;
-		top: -56px;
+		top: -52px;
 		left: -119px;
 	}
 }
@@ -415,7 +415,7 @@
 		bottom: -650px;
 	}
 	100% {
-		bottom: -37px;
+		bottom: -38px;
 	}
 }
 
@@ -439,7 +439,7 @@
 		bottom: -400px;
 	}
 	100% {
-		bottom: -31px;
+		bottom: -32px;
 	}
 }
 
@@ -463,7 +463,7 @@
 		bottom: -200px;
 	}
 	100% {
-		bottom: -88px;
+		bottom: -89px;
 	}
 }
 
