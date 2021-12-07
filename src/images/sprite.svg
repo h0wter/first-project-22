@@ -26,6 +26,11 @@ stroke-linejoin="miter" style="stroke: var(--color1, #D41443)" d="M0 29.714h45.7
 <symbol id="icon-greather-than" viewBox="0 0 22 32">
 <path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M5.574 3.2l12.88 12.8-12.88 12.8"></path>
 </symbol>
+<symbol id="icon-close-mobile" viewBox="0 0 32 32">
+<path stroke="#fff"  stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2.52 2l26.96 28M2 29.48l28-26.96"></path>
+</symbol>
+<symbol id="icon-mobile-close" viewBox="0 0 32 32">
+<path fill="none" stroke="#D41443" style="stroke: var(--color1, #D41443)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2.52 2l26.96 28M2 29.48l28-26.96"></path>
 <symbol id="icon-arrow-right" viewBox="0 0 19 32">
 <path d="M0.773 26.347l10.347-10.347-10.347-10.347c-0.481-0.481-0.779-1.146-0.779-1.88 0-1.468 1.19-2.659 2.659-2.659 0.734 0 1.399 0.298 1.88 0.779l12.24 12.24c1.040 1.040 1.040 2.72 0 3.76l-12.24 12.24c-0.481 0.482-1.146 0.78-1.88 0.78s-1.399-0.298-1.88-0.78l-0-0c-1.013-1.040-1.040-2.747 0-3.787z"></path>
 </symbol>

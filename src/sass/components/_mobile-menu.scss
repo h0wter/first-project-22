@@ -1,0 +1,100 @@
+.mob-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: var(--bgcMobMenu);
+	z-index: 100;
+	width: 100vw;
+	height: 100vh;
+	overflow-x: scroll;
+
+	@media screen and(min-width:1080px) {
+		display: none;
+	}
+}
+.is-hidden {
+	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
+}
+.mob-menu.is-open {
+	visibility: visible;
+	opacity: 1;
+	pointer-events: all;
+}
+.mob-menu__button {
+	position: relative;
+	margin: 23px 28px 23px auto;
+
+	@include flex(flex, center, center);
+
+	@media screen and(min-width:768px) {
+		margin-right: 34px;
+	}
+}
+.mob-menu__icon {
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	transition: var(--cubic);
+}
+.mob-menu__icon--rose {
+	opacity: 0;
+}
+.mob-menu__button:hover .mob-menu__icon--rose,
+.mob-menu__button:focus .mob-menu__icon--rose {
+	opacity: 1;
+}
+.mob-menu__button:hover .mob-menu__icon--white,
+.mob-menu__button:focus .mob-menu__icon--white {
+	opacity: 0;
+}
+.mob-menu__btn-main {
+	width: 209px;
+	margin: auto;
+	margin-bottom: 19px;
+
+	@media screen and(min-width:768px) {
+		width: 186px;
+		margin-left: 24px;
+	}
+}
+.mob-menu__btn-icon {
+	margin-left: 16px;
+
+	@media screen and(min-width:768px) {
+		margin-left: 14px;
+	}
+}
+
+.mob-menu__item {
+	@include font(700, 14px, 1.29em);
+	border-bottom: 1px solid var(--lineMobMenu);
+
+	&:first-child {
+		border-top: 1px solid var(--lineMobMenu);
+	}
+}
+.mob-menu__link {
+	padding-top: 13px;
+	padding-bottom: 11px;
+	padding-left: 21px;
+	display: block;
+	transition: var(--cubic);
+	width: 100%;
+
+	color: var(--secondaryColor);
+
+	&.current {
+		color: var(--accent);
+	}
+
+	&:hover,
+	&:focus {
+		color: var(--accent);
+	}
+
+	@media screen and(min-width:768px) {
+		padding-left: 24px;
+	}
+}
