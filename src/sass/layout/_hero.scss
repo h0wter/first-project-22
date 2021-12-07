@@ -112,6 +112,8 @@
 	@include font(400, 8px, 1.25);
 	@include flex(flex, center, center);
 
+	transition: background-color var(--cubic);
+
 	&:hover,
 	&:focus {
 		background-color: var(--heroBtnDarkHover);
@@ -134,6 +136,8 @@
 
 	color: var(--accent);
 	background-color: var(--heroBtnLight);
+
+	transition: background-color var(--cubic);
 
 	&:hover,
 	&:focus {

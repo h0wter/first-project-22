@@ -10,6 +10,7 @@
 .btn-main--light {
 	color: var(--accent);
 	background-color: var(--secondaryBgc);
+	transition: background-color var(--cubic), box-shadow var(--cubic);
 	&:hover,
 	&:focus {
 		background-color: var(--heroBtnLightHover);
