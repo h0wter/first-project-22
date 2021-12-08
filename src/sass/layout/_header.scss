@@ -36,6 +36,13 @@ header {
 
 	color: var(--secondaryColor);
 
+	transition: color var(--cubic);
+
+	&:hover,
+	&:focus {
+		color: var(--accent);
+	}
+
 	&.current {
 		color: var(--accent);
 	}
