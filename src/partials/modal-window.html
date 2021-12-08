@@ -1,0 +1,135 @@
+<div data-modal class="backdrop is-hidden">
+    <div class="modal">
+        <button data-modal-close type="button" aria-label="Закрыть" class="close">
+
+            <svg class="close__icon" width="11" height="11">
+                <use href="/images/modal/symbol-defs.svg#icon-close"></use>
+            </svg>
+
+
+        </button>
+
+
+
+        <form action="js-speaker-form" class="modal__form">
+
+            <h2 class="modal__text">Leave a request for delivery</h2>
+            <div class="form">
+                <p class="modal__label">Choose your product:</p>
+                <div role="group" class="form-group">
+
+                    <div class="form-field form-field--product">
+                        <label>
+                            <input class="checkbox__input--product visually-hidden" type="checkbox" name="product"
+                                value="ice-cream" checked />
+                            <span class=" checkbox__icon--product icecream"></span>
+                        </label>
+                        <label for="amount" class="form-label">amount</label>
+                        <input type="number" required min="1" max="10" step="1" value="0" name="amount-1" id="amount-1"
+                            class="form-input">
+                    </div>
+
+                    <div class="form-field form-field--product">
+                        <label>
+                            <input class="checkbox__input--product visually-hidden " type="checkbox" name="product"
+                                value="ice-coffee" />
+                            <span class="checkbox__icon--product icecoffee"></span>
+                        </label>
+                        <label for="amount" class="form-label">amount</label>
+                        <input type="number" required min="1" max="10" step="1" value="0" name="amount-1" id="amount-1"
+                            class="form-input">
+                    </div>
+
+                    <div class="form-field form-field--product">
+                        <label>
+                            <input class="checkbox__input--product visually-hidden" type="checkbox" name="product"
+                                value="milkshakes" />
+                            <span class="checkbox__icon--product milkshakes"></span>
+                        </label>
+                        <label for="amount" class="form-label">amount</label>
+                        <input type="number" required min="1" max="10" step="1" value="0" name="amount-1" id="amount-1"
+                            class="form-input">
+                    </div>
+                </div>
+
+
+
+                <div class="form__field">
+
+                    <label class="form__label" for="name">Name</label>
+
+                    <div class="form__thumb">
+                        <input class="form__input name " type="text" name="name" id="name">
+
+                        <svg class="form__icon">
+                            <use href="/images/modal/symbol-defs.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="form__field">
+
+                    <label class="form__label" for="tel">Phone number</label>
+                    <div class="form__thumb">
+                        <input class="form__input tel" type="tel" name="tel" id="tel">
+                        <svg class="form__icon">
+                            <use href="/images/modal/symbol-defs.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+
+                </div>
+
+
+
+
+
+                <label class="form__label" for="address">Delivery address</label>
+                <div class="form__thumb">
+                    <textarea class="form__input form__input--address" name="address" id="address" type="text" rows="1"
+                        placeholder="775 Westminster Avenue APT D5"></textarea>
+                    <svg class="form__icon form__icon--delivery">
+                        <use href="/images/modal/symbol-defs.svg#icon-delivery"></use>
+                    </svg>
+                </div>
+
+
+
+
+
+
+                <div class="form__field">
+
+                    <label class="form__label" for="method">Payment method</label>
+
+                    <div class="form__thumb">
+                        <select class="form__thumb  form__input" id="method" name="method">
+
+                            <option value="Google_pay"> GooglePay</option>
+                            <option value="MasterCard">MasterCard</option>
+                            <option value="cash" selected>Cash</option>
+
+                        </select>
+
+
+
+                        <svg class="form__icon">
+                            <use href="/images/modal/symbol-defs.svg#icon-cash"></use>
+                        </svg>
+
+
+                    </div>
+                </div>
+
+
+                <label class="checkbox__label">I agree and accept the <a class="checkbox__link" href="">terms of sale
+                        and delivery </a>
+                    <input class="checkbox__input visually-hidden" type="checkbox" name="policy">
+                    <span class="checkbox__icon"></span>
+                </label>
+                <button class="btn btn-main btn-main--light " type="submit"> Send </button>
+        </form>
+
+    </div>
+
+
+</div>
