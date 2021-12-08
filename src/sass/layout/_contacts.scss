@@ -222,12 +222,18 @@
 	margin-right: auto;
 	border: none;
 	fill: white;
+	transition: background-color var(--cubic);
+
 	@media screen and (min-width: 768px) {
 		width: 192px;
 
 		margin-right: 15px;
 		margin-left: 0;
 		margin-bottom: 0px;
+	}
+
+	&:hover, &:focus {
+		background-color: #C7133E;
 	}
 }
 
