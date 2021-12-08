@@ -1,185 +1,167 @@
 .section-about {
-    background-color: var(--primaryBgc);
-    background-image: url(/images/about/milk-mobile.png);
-    background-repeat: no-repeat;
-    background-position: bottom 61px center;
-    background-size: contain;
+	background-color: var(--primaryBgc);
+	background-image: url(/images/about/milk-mobile.png);
+	background-repeat: no-repeat;
+	background-position: bottom 61px center;
+	background-size: contain;
 
-    @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-        background-image: url(/images/about/milk-mobile@2x.png);
-    }
+	@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+		background-image: url(/images/about/milk-mobile@2x.png);
+	}
 
-    @media screen and (min-width: 768px) {
-        background-image: none;
-        
-    }
+	@media screen and (min-width: 768px) {
+		background-image: none;
+	}
 
-    @media screen and (min-width: 1080px) {
-        background-image: url(/images/about/milk-desktop.png);
-        background-size: 1280px 534px;
-        background-position: bottom;
-        
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url(/images/about/milk-desktop@2x.png);
-    }
-    }
+	@media screen and (min-width: 1080px) {
+		background-image: url(/images/about/milk-desktop.png);
+		background-size: 1280px 534px;
+		background-position: bottom;
+
+		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+			background-image: url(/images/about/milk-desktop@2x.png);
+		}
+	}
 }
 
 .about-container {
-    padding-top: 127px;
-    padding-bottom: 39px;
+	position: relative;
+	padding-top: 127px;
+	padding-bottom: 39px;
 
-    @media screen and (min-width: 768px) {
-        padding-top: 143px;
-        padding-bottom: 66px;
-    }
+	@media screen and (min-width: 768px) {
+		padding-top: 143px;
+		padding-bottom: 66px;
+	}
 
-    @media screen and (min-width: 1080px) {
-        padding-top: 125px;
-        padding-bottom: 71px;
-    }
+	@media screen and (min-width: 1080px) {
+		padding-top: 125px;
+		padding-bottom: 71px;
+	}
 }
 
 .about-label {
-    text-align: center;
+	text-align: center;
 }
 
 .about-title {
-    margin-top: 15px;
-    text-align: center;
+	margin-top: 15px;
+	text-align: center;
 }
 
-
 .about-wrapper {
-    margin-top: 26px;
-    @media screen and (min-width: 768px) {
-        display: flex;
-        margin-top: 50px;        
-    }
+	margin-top: 26px;
+	@media screen and (min-width: 768px) {
+		display: flex;
+		margin-top: 50px;
+	}
 
-    @media screen and (min-width: 1080px) {
-        margin-top: 55px;        
-    }
+	@media screen and (min-width: 1080px) {
+		margin-top: 55px;
+	}
 }
 
 .about-text-block {
-    padding-left: 35px;
-    padding-right: 35px;
+	padding-left: 35px;
+	padding-right: 35px;
 
-    @media screen and (min-width: 768px) {
-        padding-left: 0px;
-        padding-right: 50px;
-    }
+	@media screen and (min-width: 768px) {
+		padding-left: 0px;
+		padding-right: 50px;
+	}
 
-
-    @media screen and (min-width: 1080px) {
-        padding-right: 35px;
-        margin-left: 0;
-        margin-right: 0;
-
-    }
-
-
+	@media screen and (min-width: 1080px) {
+		padding-right: 35px;
+		margin-left: 0;
+		margin-right: 0;
+	}
 }
 
+.about-first-text,
+.about-second-text {
+	font-family: DM Sans;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 19px;
 
+	@media screen and (min-width: 768px) {
+		max-width: 463px;
+		font-size: 14px;
+	}
 
-.about-first-text, .about-second-text {
-    font-family: DM Sans;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 19px;
-
-    @media screen and (min-width: 768px) {
-        max-width: 463px;
-        font-size: 14px;
-    }
-
-    @media screen and (min-width: 1080px) {
-        max-width: 463px;
-    }
+	@media screen and (min-width: 1080px) {
+		max-width: 463px;
+	}
 }
-
 
 .about-first-text {
-    margin-top: 46px;
-    margin-bottom: 30px;
-    color: var(--darkColor);
+	margin-top: 46px;
+	margin-bottom: 30px;
+	color: var(--darkColor);
 
-    @media screen and (min-width: 768px) {
-        max-width: 340px;
-        
-    }
+	@media screen and (min-width: 768px) {
+		max-width: 340px;
+	}
 
-    @media screen and (min-width: 1080px) {
-        max-width: 463px;
-        font-size: 16px;
-        line-height: 28px;
-    }
+	@media screen and (min-width: 1080px) {
+		max-width: 463px;
+		font-size: 16px;
+		line-height: 28px;
+	}
 }
 
 .about-second-text {
-    margin-bottom: 20px;
-    color: var(--primaryColor);
+	margin-bottom: 20px;
+	color: var(--primaryColor);
 
-    @media screen and (min-width: 768px) {
-        max-width: 340px;
-    
-    }
+	@media screen and (min-width: 768px) {
+		max-width: 340px;
+	}
 
-    @media screen and (min-width: 1080px) {
-        max-width: 463px;
-        font-size: 14px;
-        line-height: 27px;
-    }
+	@media screen and (min-width: 1080px) {
+		max-width: 463px;
+		font-size: 14px;
+		line-height: 27px;
+	}
 }
-
 
 .about-btn {
-    width: 176px;
-    border: none;
+	width: 176px;
+	border: none;
 
-    @media screen and (min-width: 768px) {
-        margin-top: 62px;
-    }
+	@media screen and (min-width: 768px) {
+		margin-top: 62px;
+	}
 
-    @media screen and (min-width: 1080px) {
-        margin-top: 45px;
-    }
+	@media screen and (min-width: 1080px) {
+		margin-top: 45px;
+	}
 }
-
 
 .about-icon {
-    margin-left: 13px;
-    
+	margin-left: 13px;
 }
 
-
 .about-img-box {
-    
-    @media screen and (min-width: 768px) {
-        margin-right: 17px;
-    }
+	@media screen and (min-width: 768px) {
+		margin-right: 17px;
+	}
 
-    @media screen and (min-width: 1080px) {
-        margin-right: 74px;
-    }
+	@media screen and (min-width: 1080px) {
+		margin-right: 74px;
+	}
 }
 
 .about-image {
-    margin-left: auto;
-    margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 
-    @media screen and (min-width: 768px) {
-        min-width: 340px;
-    }
+	@media screen and (min-width: 768px) {
+		min-width: 340px;
+	}
 
-    @media screen and (min-width: 1080px) {
-        min-width: 516px;
-    }
+	@media screen and (min-width: 1080px) {
+		min-width: 516px;
+	}
 }
