@@ -2,22 +2,31 @@
 	z-index: 150;
 	width: 100vw;
 	height: 100vh;
-	position: absolute;
-}
-.modal-read-more {
-	// MOBILE TABLET LAPTOP (WHEN TURN THE SCREEN)
-	@media screen and(max-width:1200px) and(max-height:550px) {
-		margin-top: 150px;
-	}
+	position: fixed;
 
+	top: 0;
+	overflow-y: scroll;
+	transition: opacity var(--cubic), visibility var(--cubic);
+}
+.is-hidden {
+	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
+}
+.is-hidden .modal-read-more,
+.modal-read-more {
+	transform: scale(0.7);
+	transition: transform var(--cubic);
+}
+
+.modal-read-more {
 	@media screen and(max-width:1080px) {
 		overflow-y: scroll;
 	}
 
 	// MOBILE
 	max-width: 450px;
-
-	height: 100%;
+	width: 100%;
 	position: absolute;
 	top: 50%;
 	left: 50%;

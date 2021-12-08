@@ -1,4 +1,5 @@
 .section-about {
+	position: relative;
 	background-color: var(--primaryBgc);
 	background-image: url(/images/about/milk-mobile.png);
 	background-repeat: no-repeat;
@@ -25,7 +26,7 @@
 }
 
 .about-container {
-	position: relative;
+	margin: auto;
 	padding-top: 127px;
 	padding-bottom: 39px;
 
