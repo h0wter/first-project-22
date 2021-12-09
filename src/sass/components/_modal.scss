@@ -9,6 +9,7 @@
   z-index: 10;
   transition: opacity 250ms ease-in-out, visibility 250ms ease-in-out;
   opacity: 1;
+  overflow-y: scroll;
 
   &.is-hidden {
     opacity: 0;
@@ -47,6 +48,7 @@
     transform: translate(-50%, -50%) scale(0.5);
   }
 }
+
 
 iframe {
   position: absolute;
@@ -91,8 +93,8 @@ iframe {
   outline: none;
 }
 
-.form__label {
-    position: absolute;
+.form__label--franchise {
+  position: absolute;
   top: 50%;
   left: 10px;
   transform: translateY(-50%);
@@ -105,14 +107,14 @@ iframe {
   border-color:var(--accent);
 }
 
-.form__field--franchise:focus-within > .form__label,
-.form__field--franchise:focus-within ~ .form__input {
+.form__field--franchise:focus-within > .form__label--franchise,
+.form__field--franchise:focus-within ~ .form__input--franchise {
   color: var(--accent);
   border-color: var(--accent);
   transform: translateY(-50px);
 }
 
-.form__input--franchise:not(:placeholder-shown) + .form__label {
+.form__input--franchise:not(:placeholder-shown) + .form__label--franchise {
   transform: translateY(-50px);
 }
 
@@ -121,4 +123,9 @@ iframe {
   margin: 0 auto;
   min-width: 150px;
   min-height: 45px;
+
+  &:hover,
+  &:focus {
+    background-color: var(--heroBtnDarkHover);
+  }
 }

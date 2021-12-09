@@ -68,11 +68,11 @@
     </li>
   </ul>
   <div class="contacts-buttons">
-    <button class="btn btn-main contacts-buttons__location" type="button">Our Locations      <svg class="about-icon arrow-svg" width="10" height="16" >
+    <button data-map-open class="btn btn-main contacts-buttons__location" type="button">Our Locations      <svg class="about-icon arrow-svg" width="10" height="16" >
         <use href="images/sprite.svg#icon-arrow-right"></use>
       </svg>
 </button>
-<button class="btn btn-main btn-main--light contacts-buttons__franchise" type="button">Franchise 
+<button data-franchise-open class="btn btn-main btn-main--light contacts-buttons__franchise" type="button">Franchise 
   <svg 
       class="greather-than btn-main__icon">
       <use href="images/sprite.svg#icon-greather-than"></use>
@@ -82,10 +82,10 @@
 </div>
 
 <!-- Модальное окно  карта -->
-    <div class="backdrop__map">
+    <div data-map class="backdrop__map is-hidden">
       <div class="modal__map">
         <!-- Иконка закрытия -->
-        <button type="button" aria-label="Закрыть" class="close">
+        <button data-map-close type="button" aria-label="Закрыть" class="close">
             <svg class="close__icon" width="11" height="11">
                 <use href="/images/modal/symbol-defs.svg#icon-close"></use>
             </svg>
@@ -96,16 +96,16 @@
 
     <!-- Модальное окно франшизы -->
 
-    <!-- <div data-modal class="backdrop">
+    <div data-franchise class="backdrop backdrop__francise is-hidden">
     <div class="modal">
-        <button type="button" aria-label="Закрыть" class="close">
+        <button data-franchise-close type="button" aria-label="Закрыть" class="close">
 
             <svg class="close__icon" width="11" height="11">
                 <use href="/images/modal/symbol-defs.svg#icon-close"></use>
             </svg>
         </button>
 
-        <form action="" class="form">
+        <form autocomplete="off" class="form">
           <p class="form__title">
             Fill out the form and we will contact you to discuss all the details
             of the franchise
@@ -113,11 +113,11 @@
           <label class="form__field--franchise">
             <input
               type="text"
-              class="form__input form__input--franchise"
+              class="form__input--franchise"
               name="firstname"
               placeholder=" "
             />
-            <span class="form__label">First name</span>
+            <span class="form__label--franchise">First name</span>
           </label>
           <label class="form__field--franchise">
             <input
@@ -126,11 +126,11 @@
               name="lastname"
               placeholder=" "
             />
-            <span class="form__label">You city</span>
+            <span class="form__label--franchise">You city</span>
           </label>
           <label class="form__field--franchise">
             <input type="tel" class="form__input--franchise" name="tel" placeholder=" " />
-            <span class="form__label">Telephon</span>
+            <span class="form__label--franchise">Telephon</span>
           </label>
           <label class="form__field--franchise">
             <input
@@ -139,11 +139,11 @@
               name="mail"
               placeholder=" "
             />
-            <span class="form__label">E-mail</span>
+            <span class="form__label--franchise">E-mail</span>
           </label>
         </form>
 
         <button class="btn btn-main form__btn" type="button"> Send </button>
       </div>
-    </div> -->
+    </div>
 </section>
