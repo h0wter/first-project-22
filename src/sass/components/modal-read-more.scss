@@ -1,0 +1,178 @@
+.overflow {
+	z-index: 150;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+
+	top: 0;
+	overflow-y: scroll;
+	transition: opacity var(--cubic), visibility var(--cubic);
+}
+.is-hidden {
+	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
+}
+.is-hidden .modal-read-more,
+.modal-read-more {
+	transform: scale(0.7);
+	transition: transform var(--cubic);
+}
+
+.modal-read-more {
+	@media screen and(max-width:1080px) {
+		overflow-y: scroll;
+	}
+
+	// MOBILE
+	max-width: 450px;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+		0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+	transform: translate(-50%, -50%);
+
+	background-image: linear-gradient(rgba(47, 48, 58, 0.6), rgba(47, 48, 58, 0.5)),
+		url('/images/modal-read-more/tel-modal-bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	max-height: 400px;
+
+	@media screen and (min-device-pixel-ratio: 2),
+		(-webkit-min-device-pixel-ratio: 2),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx) {
+		background-image: linear-gradient(rgba(47, 48, 58, 0.6), rgba(47, 48, 58, 0.5)),
+			url('/images/modal-read-more/tel-modal-bg@2x.jpg');
+	}
+
+	@media screen and (min-device-pixel-ratio: 3),
+		(-webkit-min-device-pixel-ratio: 3),
+		(min-resolution: 192dpi),
+		(min-resolution: 2dppx) {
+		background-image: linear-gradient(rgba(47, 48, 58, 0.6), rgba(47, 48, 58, 0.5)),
+			url('/images/modal-read-more/tel-modal-bg@3x.jpg');
+	}
+
+	// TABLET
+
+	@media screen and(min-width:768px) {
+		max-width: 768px;
+	}
+
+	@media screen and (min-width: 481px) {
+		background-image: linear-gradient(rgba(47, 48, 58, 0.6), rgba(47, 48, 58, 0.5)),
+			url('/images/modal-read-more/tablet-modal-bg.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		max-height: 400px;
+
+		@media screen and (min-device-pixel-ratio: 2),
+			(-webkit-min-device-pixel-ratio: 2),
+			(min-resolution: 192dpi),
+			(min-resolution: 2dppx) {
+			background-image: linear-gradient(rgba(47, 48, 58, 0.6), rgba(47, 48, 58, 0.5)),
+				url('/images/modal-read-more/tablet-modal-bg@2x.jpg');
+		}
+
+		@media screen and (min-device-pixel-ratio: 3),
+			(-webkit-min-device-pixel-ratio: 3),
+			(min-resolution: 192dpi),
+			(min-resolution: 2dppx) {
+			background-image: linear-gradient(rgba(47, 48, 58, 0.6), rgba(47, 48, 58, 0.5)),
+				url('/images/modal-read-more/tablet-modal-bg@3x.jpg');
+		}
+	}
+
+	// DESKTOP
+
+	@media screen and(min-width:1080px) {
+		max-width: 1080px;
+	}
+
+	@media screen and (min-width: 769px) {
+		background-image: linear-gradient(rgba(47, 48, 58, 0.6), rgba(47, 48, 58, 0.5)),
+			url('/images/modal-read-more/desktop-modal-bg.jpg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		max-height: 400px;
+
+		@media screen and (min-device-pixel-ratio: 2),
+			(-webkit-min-device-pixel-ratio: 2),
+			(min-resolution: 192dpi),
+			(min-resolution: 2dppx) {
+			background-image: linear-gradient(rgba(47, 48, 58, 0.6), rgba(47, 48, 58, 0.5)),
+				url('/images/modal-read-more/desktop-modal-bg@2x.jpg');
+		}
+
+		@media screen and (min-device-pixel-ratio: 3),
+			(-webkit-min-device-pixel-ratio: 3),
+			(min-resolution: 192dpi),
+			(min-resolution: 2dppx) {
+			background-image: linear-gradient(rgba(47, 48, 58, 0.6), rgba(47, 48, 58, 0.5)),
+				url('/images/modal-read-more/desktop-modal-bg@3x.jpg');
+		}
+	}
+}
+.modal-read-more__btn {
+	transform: var(--cubic);
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: auto;
+
+	@include flex(flex, center, center);
+
+	@media screen and(min-width:480px) {
+		margin-top: 10px;
+	}
+
+	@media screen and(min-width:768px) {
+		margin-top: 20px;
+		margin-right: 20px;
+		margin-bottom: 20px;
+	}
+}
+.modal-read-more__icon {
+	width: 30px;
+	height: 30px;
+	fill: var(--primaryBgc);
+	transform: var(--cubic);
+	@media screen and(min-width:480px) {
+		width: 40px;
+		height: 40px;
+	}
+
+	&:hover,
+	&:focus {
+		fill: var(--accent);
+	}
+}
+.modal-read-more__third-title {
+	text-align: center;
+	color: var(--primaryBgc);
+	margin-bottom: 20px;
+
+	@media screen and(min-width:768px) {
+		margin-bottom: 40px;
+	}
+}
+.modal-read-more__text {
+	@include font(400, 20px, 1.14em);
+
+	color: var(--primaryBgc);
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+
+	@media screen and(min-width:768px) {
+		padding-bottom: 40px;
+		letter-spacing: 0.06em;
+	}
+}
