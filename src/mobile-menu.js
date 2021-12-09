@@ -3,7 +3,7 @@
     
     openMenuBtn: document.querySelector('[data-menu-open]'),
     closeMenuBtn: document.querySelector('[data-menu-close]'),
-closeHomeMenuBtn: document.querySelector('[data-hone-menu-close]'),
+closeHomeMenuBtn: document.querySelector('[data-home-menu-close]'),
 closeAboutMenuBtn: document.querySelector('[data-about-menu-close]'),
 closeHowMenuBtn: document.querySelector('[data-how-menu-close]'),
 closeOurMenuBtn: document.querySelector('[data-our-menu-close]'),
