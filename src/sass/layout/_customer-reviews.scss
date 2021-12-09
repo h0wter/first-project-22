@@ -190,12 +190,14 @@
 
 .slick-dots li.slick-active button::before {
 	color: transparent;
+	position: relative;
+	top: 0;
+	left: 0;
 	background-image: url('/images/customer-reviews/home.svg');
 	background-size: contain;
 	background-origin: border-box;
 	background-repeat: no-repeat;
 	width: 13px;
 	height: 12px;
-	width: 100%;
 	line-height: 0;
 }
