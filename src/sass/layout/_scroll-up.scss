@@ -1,0 +1,49 @@
+.btn-scroll-up {
+	font-size: 30px;
+	position: fixed;
+	display: none;
+	border-radius: 33%;
+
+	top: 85%;
+	left: 85%;
+
+	display: block;
+	text-align: center;
+
+	background-color: rgba(253, 143, 143, 0.075);
+	color: #f86b8c;
+	border: 2.5px solid var(--circleBgc);
+	width: 35px;
+	height: 35px;
+
+	transform: rotate(-90deg);
+	z-index: 99;
+	transition: all var (--cubic);
+
+	&:hover {
+		color: var(--secondaryBgc);
+		background-color: var(--accent);
+		border: 2.5px solid var(--accent);
+	}
+
+	@media screen and (min-width: 480px) {
+		@include flex(flex, center, center);
+		font-size: 35px;
+		width: 45px;
+		height: 45px;
+
+		left: 88%;
+	}
+
+	@media screen and (min-width: 768px) {
+		left: 90%;
+	}
+
+	@media screen and (min-width: 1080px) {
+		font-size: 39px;
+		width: 50px;
+		height: 50px;
+
+		left: 94%;
+	}
+}
