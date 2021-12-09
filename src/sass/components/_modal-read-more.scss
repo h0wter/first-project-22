@@ -140,14 +140,10 @@
 	}
 }
 .modal-read-more__icon {
-	width: 30px;
-	height: 30px;
+	width: 14px;
+	height: 14px;
 	fill: var(--primaryBgc);
 	transform: var(--cubic);
-	@media screen and(min-width:480px) {
-		width: 40px;
-		height: 40px;
-	}
 
 	&:hover,
 	&:focus {
