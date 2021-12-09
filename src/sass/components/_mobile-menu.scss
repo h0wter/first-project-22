@@ -33,22 +33,19 @@
 	}
 }
 .mob-menu__icon {
+	fill: var(--secondaryColor);
 	position: absolute;
 	width: 14px;
 	height: 14px;
 	transition: var(--cubic);
 }
-.mob-menu__icon--rose {
-	opacity: 0;
+
+.mob-menu__button {
+	&:hover .mob-menu__icon, &:focus .mob-menu__icon {
+		fill: var(--accent);
+	}
 }
-.mob-menu__button:hover .mob-menu__icon--rose,
-.mob-menu__button:focus .mob-menu__icon--rose {
-	opacity: 1;
-}
-.mob-menu__button:hover .mob-menu__icon--white,
-.mob-menu__button:focus .mob-menu__icon--white {
-	opacity: 0;
-}
+
 .mob-menu__btn-main {
 	width: 209px;
 	margin: auto;
