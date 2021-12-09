@@ -1,4 +1,26 @@
 <section id="about" class="section-about">
+
+<!-- START MODAL READ MORE -->
+    <div class="overflow is-hidden" data-read-modal>
+      <div class="modal-read-more">
+        <button class="modal-read-more__btn btn" data-modal-read-close>
+          <svg class="modal-read-more__icon">
+            <use href="/images/sprite.svg#icon-close-read-more"></use>
+          </svg>
+        </button>
+        <h3 class="third-title modal-read-more__third-title">Lorem, ipsum dolor.</h3>
+        <p class="modal-read-more__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          Dolore doloribus accusantium tempora itaque mollitia tempore eaque laborum rem doloremque
+          corporis illum sunt soluta harum aliquid impedit ducimus consequatur, id veniam necessitatibus
+          facere saepe! Eum ea commodi minus id? Quis voluptate quos aliquam voluptates similique doloribus velit,
+          debitis beatae ad! Iusto recusandae itaque quasi eum dolore tenetur iure harum. Ipsam, minus exercitationem.
+          Nisi numquam eius minus dolore fuga doloribus error enim veniam unde suscipit autem quidem
+          facere quas, tenetur ipsa! Maiores deleniti repellat sit, laboriosam quae officia, incidunt magnam
+          ad libero minima nam modi esse officiis adipisci recusandae ducimus ut rerum?</p>
+      </div>
+    </div>
+<!-- FINISH WORK WITH READ MORE -->
+
     <div class="about-container container">
       <p class="third-title about-label">tradition and love</p>
       <h2 class="second-title about-title">how it’s made?</h2>
@@ -21,14 +43,18 @@
             </p>
             <p class="about-second-text">Aliquam erat volutpat. Aenean accumsan.
             </p>
-              <button type="button" class="about-btn btn btn-main--light btn-main">Read more
+              <button type="button" class="about-btn btn btn-main--light btn-main" data-modal-read-open>Read more
                 <svg class="about-icon" width="10" height="16" >
                   <use href="images/sprite.svg#icon-greather-than"></use>
                 </svg>
               </button>
           </div>
       </div>
+
+
     </div>
+
+   
 </section>
 
 

@@ -167,16 +167,37 @@
 	text-align: center;
 }
 
+.slick-dots li {
+	width: 13px;
+	height: 12px;
+	margin-right: 18px;
+}
+
+.slick-dots li button {
+	width: 100%;
+	line-height: 0;
+}
+
 .slick-dots li button::before {
 	font-size: 12px;
-	// color: var(--sliderBgc);
-	color: #e1e1e1;
+	color: #000000;
+	line-height: 12px;
+}
+
+.slick-dots li:hover button::before {
+	color: var(--sliderBgc);
 }
 
 .slick-dots li.slick-active button::before {
 	color: transparent;
+	position: relative;
+	top: 0;
+	left: 0;
 	background-image: url('/images/customer-reviews/home.svg');
 	background-size: contain;
 	background-origin: border-box;
 	background-repeat: no-repeat;
+	width: 13px;
+	height: 12px;
+	line-height: 0;
 }
